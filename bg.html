@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url('bkg.jpg'); /* Ensure this path is correct */
+            background-size: cover; /* Ensure the background covers the whole screen */
+            background-repeat: no-repeat; /* Prevent the background from repeating */
+            animation: moveBackground 20s linear infinite; /* Apply the animation */
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0; /* Start position */
+            }
+            100% {
+                background-position: 100% 0; /* End position */
+            }
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
